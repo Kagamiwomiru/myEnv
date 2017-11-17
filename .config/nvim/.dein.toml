@@ -32,9 +32,6 @@ repo = 'itchyny/lightline.vim'
 
 
 [[plugins]]
-repo = 'w0rp/ale'
-
-[[plugins]]
 repo = 'ConradIrwin/vim-bracketed-paste'
 
 [[plugins]]
