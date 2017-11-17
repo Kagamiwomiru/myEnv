@@ -73,16 +73,7 @@ nnoremap <silent> <C-n> :NERDTreeToggle<CR>
 
 
 "自動補完系
-inoremap { {}<LEFT>
-inoremap [ []<LEFT>
-inoremap ( ()<LEFT>
-inoremap " ""<LEFT>
-inoremap ' ''<LEFT>
-vnoremap { "zdi^V{<C-R>z}<ESC>
-vnoremap [ "zdi^V[<C-R>z]<ESC>
-vnoremap ( "zdi^V(<C-R>z)<ESC>
-vnoremap " "zdi^V"<C-R>z^V"<ESC>
-vnoremap ' "zdi'<C-R>z'<ESC>
+
 
 "neoterm設定
 let g:neoterm_position = 'horizontal'
@@ -105,16 +96,9 @@ let g:lightline = {
   \    ['readonly', 'filename', 'modified', 'ale'],
   \  ]
   \},
-  \'component_function': {
-  \  'ale': 'ALEGetStatusLine'
-  \}
 \ }
 
-"ALE設定
-let g:ale_statusline_format = ['エラー %d', '警告 %d', '']
-let g:ale_lint_on_save = 1
-let g:ale_lint_on_text_changed = 0
-let g:ale_open_list = 1
+
 
 
 " The NERD Tree設定
